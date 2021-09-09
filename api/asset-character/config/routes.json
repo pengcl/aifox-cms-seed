@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/asset-characters",
+      "handler": "asset-character.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/asset-characters/count",
+      "handler": "asset-character.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/asset-characters/:id",
+      "handler": "asset-character.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/asset-characters",
+      "handler": "asset-character.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/asset-characters/:id",
+      "handler": "asset-character.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/asset-characters/:id",
+      "handler": "asset-character.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

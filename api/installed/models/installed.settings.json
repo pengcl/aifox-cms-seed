@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "installeds",
+  "info": {
+    "name": "installed"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "status": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industries",
+  "info": {
+    "name": "Industry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

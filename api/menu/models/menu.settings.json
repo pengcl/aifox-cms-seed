@@ -1,0 +1,154 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "menu",
+    "description": "菜单"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "maxLength": 50,
+      "minLength": 2
+    },
+    "name_cn": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "maxLength": 50,
+      "minLength": 2
+    },
+    "name_en": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "maxLength": 50,
+      "minLength": 2
+    },
+    "name_hk": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "maxLength": 50,
+      "minLength": 2
+    },
+    "description": {
+      "type": "text"
+    },
+    "description_cn": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_hk": {
+      "type": "text"
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "menu"
+    },
+    "menu": {
+      "model": "menu",
+      "via": "menus"
+    },
+    "thumb": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "poster": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "show": {
+      "type": "boolean",
+      "default": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "content_cn": {
+      "type": "richtext"
+    },
+    "content_en": {
+      "type": "richtext"
+    },
+    "content_hk": {
+      "type": "richtext"
+    },
+    "content_type": {
+      "model": "content-type"
+    },
+    "tags": {
+      "collection": "tag"
+    },
+    "template": {
+      "model": "template"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "channel": {
+      "model": "channel"
+    },
+    "custom_type": {
+      "type": "string",
+      "unique": false
+    },
+    "poster_cn": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "poster_en": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "poster_hk": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

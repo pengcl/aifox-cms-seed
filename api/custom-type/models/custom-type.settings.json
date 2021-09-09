@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_types",
+  "info": {
+    "name": "customType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name_cn": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_hk": {
+      "type": "string"
+    },
+    "menu": {
+      "model": "menu"
+    }
+  }
+}

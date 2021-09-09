@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/installed",
+      "handler": "installed.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/installed",
+      "handler": "installed.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/installed",
+      "handler": "installed.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "name": "language",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name_cn": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name_en": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name_hk": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "label": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

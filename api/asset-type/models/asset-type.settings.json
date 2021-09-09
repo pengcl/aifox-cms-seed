@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asset_types",
+  "info": {
+    "name": "asset_type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_cn": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "asset_type": {
+      "model": "asset-type"
+    }
+  }
+}

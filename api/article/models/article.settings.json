@@ -1,0 +1,169 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "title_cn": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_hk": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description_cn": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_hk": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "body_cn": {
+      "type": "richtext"
+    },
+    "body_en": {
+      "type": "richtext"
+    },
+    "body_hk": {
+      "type": "richtext"
+    },
+    "menu": {
+      "model": "menu"
+    },
+    "thumb": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ios": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "android": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "windows": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mac": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "custom_type": {
+      "model": "custom-type"
+    },
+    "short_title": {
+      "type": "string"
+    },
+    "short_title_cn": {
+      "type": "string"
+    },
+    "short_title_en": {
+      "type": "string"
+    },
+    "short_title_hk": {
+      "type": "string"
+    },
+    "company": {
+      "model": "company"
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "url": {
+      "type": "string"
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

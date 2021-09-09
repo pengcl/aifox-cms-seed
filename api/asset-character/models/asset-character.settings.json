@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asset_characters",
+  "info": {
+    "name": "asset_character"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_cn": {
+      "type": "string"
+    },
+    "descrition_cn": {
+      "type": "text"
+    },
+    "code": {
+      "type": "string"
+    },
+    "asset": {
+      "via": "asset_characters",
+      "model": "asset"
+    }
+  }
+}
